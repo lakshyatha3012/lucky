@@ -1,109 +1,238 @@
-<html>
-  <head>
-    <title>Resume-lakshya</title>
-    <style>
-    .first {
-            display: flex;
-            align-items: center;
-            border-bottom: 3px solid #ddd;
-            padding-bottom: 10px;
-        }
-         .first img {
-            width: 150px;
-            height: 150px;
-            margin-right: 15px;
-            border-radius: 10px;
-        }        
-        .end{
-          text-align:center;
-          color:grey;
-          margin-top:20px
-        }
-         table, th, td {
-            border: 1px solid #ccc;
-        }
-
-        th {
-            background-color: #f7f7f7;
-        }
-
-        th, td {
-            padding: 10px;
-            text-align: left;
-        }
-    </style>
-  </head>
-  <body>
-    <div class="first">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk4kXNwi5qxFZ37_gdO6b0ulQbA_IMeRMOPS7I8zIHjg&s=10">
-      <div>
-    <h1>Tatina Lakshyatha</h1>
-    <p>Phone:7337406300</p>
-      <p>  Email:lakshyatha.tatina24@sasi.ac.in</p>
-    </div>
-    </div>
-    <div class="summary">
-    <h2>Summary</h2>
-    <p>Dedicated student with good communication, problem-solving, and teamwork skills.
-       Seeking an internship where I can enhance my technical and
-        professional abilities while making meaningful contributions to the organization's goals.</p>
-    </div>
-    <div>
-      <h2>Technical Skills</h2>
-      <ul>
-        <li>C, Java , Python</li>
-        <li>HTML  , CSS , JavaScript</li>
-        <li>Tools : Visual Studio Code , GitHub</li>
-      </ul>
-    </div>
-    <div>
-      <h2>Experience</h2>
-      <p>Currently seeking an internship opportunity to gain practical experience and
-         apply my academic knowledge in a professional environment. 
-         Eager to learn new technologies, develop technical skills, 
-         and contribute effectively to the organization.</p>
-    </div>
-    <div>
-      <h2>Projects</h2>
-      <p>Currently learning and practicing programming 
-        through academic coursework and small practice exercises. 
-        Improving skills in Java, HTML, CSS, JavaScript, and basic web development concepts.
-      </p>
-    </div>
-    <div>
-      <h2>Education</h2>
-      <table>
-        <tr>
-          <th>Qualification</th>
-          <th>Institute</th>
-          <th>Score</th>
-        </tr>
-        <tr>
-          <td>B.Tech(CSM) 2years</td>
-          <td>SITE</td>
-          <td>8.8 CGPA</td>
-        </tr>
-        <tr>
-          <td>Intermediate</td>
-          <td>Vikas Junior College</td>
-          <td>98.4%</td>
-        </tr>
-        <tr>
-          <td>SSC</td>
-          <td>Vignan E.M School</td>
-          <td>9.2 CGPA</td>
-        </tr>
-      </table>
-    </div>
-    <div>
-      <h2>Certifications</h2>
-      <ul>
-        <li>C Programming Certification</li>
-        <li>Java Programming Certification</li>
-      </ul>
-    </div>
-    <div class="end">
-      <p>@ 2026 Lakshyatha</p>
-    </div>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resume - Tatina Lakshyatha</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+}
+body{
+    background:#f4f6f8;
+    padding:30px;
+}
+.resume{
+    max-width:900px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:280px 1fr;
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+.left{
+    background:#34495E;
+    color:white;
+    padding:30px;
+}
+.left img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    display:block;
+    margin:auto;
+    border:4px solid white;
+}
+.left h2{
+    text-align:center;
+    margin-top:15px;
+}
+.left p{
+    text-align:center;
+    color:#dcdcdc;
+    margin-bottom:25px;
+}
+.section{
+    margin-top:25px;
+}
+.section h3{
+    margin-bottom:12px;
+    padding-bottom:6px;
+    border-bottom:1px solid rgba(255,255,255,.3);
+}
+.section ul{
+    list-style:none;
+}
+.section ul li{
+    margin:10px 0;
+    font-size:15px;
+}
+.right{
+    padding:35px;
+}
+.right h1{
+    color:#2C3E50;
+    font-size:34px;
+}
+.role{
+    color:#777;
+    margin-top:5px;
+    margin-bottom:25px;
+}
+.title{
+    color:#2C3E50;
+    border-left:5px solid #5B8FB9;
+    padding-left:10px;
+    margin-top:25px;
+    margin-bottom:12px;
+}
+.right p{
+    color:#555;
+    line-height:1.8;
+}
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+.skills span{
+    background:#5B8FB9;
+    color:white;
+    padding:8px 15px;
+    border-radius:20px;
+    font-size:14px;
+}
+.skills span:hover{
+    background:#34495E;
+    transition:.3s;
+}
+.project li{
+    margin-bottom:10px;
+    color:#444;
+}
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:10px;
+}
+th{
+    background:#5B8FB9;
+    color:white;
+}
+th,td{
+    border:1px solid #ddd;
+    padding:12px;
+    text-align:center;
+}
+tr:nth-child(even){
+    background:#f7f9fb;
+}
+.footer{
+    margin-top:30px;
+    text-align:center;
+    color:#888;
+    font-size:14px;
+}
+</style>
+</head>
+<body>
+<div class="resume">
+<div class="left">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYtrV9DnsGbag-BwG5yb3g6P1_9Ok1Q_MgE2nWr5mPUdmrSqJAssKwcoGS&s=10" alt="Profile">
+<h2>Tatina Lakshyatha</h2>
+<p>B.Tech CSM Student</p>
+<div class="section">
+<h3>Contact</h3>
+<ul>
+<li>📞 7337406300</li>
+<li>📧 lakshyatha3012@gmail.com</li>
+</ul>
+</div>
+<div class="section">
+<h3>Technical Skills</h3>
+<ul>
+<li>C Programming</li>
+<li>Java</li>
+<li>Python</li>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+<li>GitHub</li>
+<li>VS Code</li>
+</ul>
+</div>
+<div class="section">
+<h3>Languages</h3>
+<ul>
+<li>English</li>
+<li>Telugu</li>
+</ul>
+</div>
+<div class="section">
+<h3>Strengths</h3>
+<ul>
+<li>✔ Quick Learner</li>
+<li>✔ Problem Solving</li>
+<li>✔ Team Player</li>
+<li>✔ Communication</li>
+<li>✔ Positive Attitude</li>
+</ul>
+</div>
+</div>
+<div class="right">
+<h1>Tatina Lakshyatha</h1>
+<p class="role">
+Computer Science & Machine Learning Student
+</p>
+<h2 class="title">Career Objective</h2>
+<p>
+Motivated and enthusiastic B.Tech student seeking internship opportunities to apply programming and web development skills while gaining practical industry experience. Passionate about learning new technologies and contributing effectively to organizational success.
+</p>
+<h2 class="title">Technical Skills</h2>
+<div class="skills">
+<span>C</span>
+<span>Java</span>
+<span>Python</span>
+<span>HTML</span>
+<span>CSS</span>
+<span>JavaScript</span>
+<span>GitHub</span>
+<span>VS Code</span>
+</div>
+<h2 class="title">Projects</h2>
+<ul class="project">
+<li>Designed and developed a Personal Resume Website using HTML and CSS.</li>
+<li>Created Java applications for academic practice and problem-solving.</li>
+<li>Developed responsive web pages using HTML, CSS and JavaScript.</li>
+</ul>
+<h2 class="title">Education</h2>
+<table>
+<tr>
+<th>Qualification</th>
+<th>Institution</th>
+<th>Score</th>
+</tr>
+<tr>
+<td>B.Tech (CSM)</td>
+<td>Sasi Institute of Technology & Engineering</td>
+<td>8.8 CGPA</td>
+</tr>
+<tr>
+<td>Intermediate</td>
+<td>Vikas Junior College</td>
+<td>98.4%</td>
+</tr>
+<tr>
+<td>SSC</td>
+<td>Vignan E.M School</td>
+<td>9.2 CGPA</td>
+</tr>
+</table>
+<h2 class="title">Certifications</h2>
+<ul class="project">
+<li>C Programming Certification</li>
+<li>Java Programming Certification</li>
+</ul>
+<div class="footer">
+© 2026 Tatina Lakshyatha |  Resume
+</div>
+</div>
+</div>
+</body>
 </html>
